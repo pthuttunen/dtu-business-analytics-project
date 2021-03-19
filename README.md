@@ -10,7 +10,10 @@ The challenge relates to the housing market in the Santiago de Chile area. A rel
 4. Predictive Notebook
 
 ## The dataset
-The dataset that was provided for the challenge contains a few details about different house transactions, such as the latitude/longitude coordinates, the transport accessibility context of the area and some characteristics of the household that bought the house. The data was examined in the Descriptive Statistics Notebook. In addition to the given dataset, our group used point of interest -data for the Santiage de Chile area. This dataset was examined in the Additional Dataset Notebook
+The dataset that was provided for the challenge contains a few details about different house transactions, such as the latitude/longitude coordinates, the transport accessibility context of the area and some characteristics of the household that bought the house. The data was examined in the Descriptive Statistics Notebook. In addition to the given dataset, our group used point of interest -data for the Santiage de Chile area. This dataset was examined in the Additional Dataset Notebook.
+
+Visualization of the dataset and the split to test and training sets based on project instructions:
+![](https://github.com/pthuttunen/dtu-business-analytics-project/blob/main/images/test-training-set.png)
 
 ## Exploratory work
 The following questions were addressed in the Exploratory Notebook:
@@ -34,3 +37,8 @@ The Predictive Notebook aims to predict the CLASE variable, which is a categoric
 - KNeighbors classifier
 - Random forest
 - Simple neural network with l2 regulizers
+
+As expected, the geographical split to training and test sets made the prediction task challenging. Using a random split gave better results.
+
+The best results were achieved with SVM on a shuffled dataset:
+![](https://github.com/pthuttunen/dtu-business-analytics-project/blob/main/images/SVC-confusion-matrix.png)
